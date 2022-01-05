@@ -148,7 +148,7 @@
 
 # thisList[1:3] = ["watermelon"]
 # thisList.insert(2, "watermelon")
-thisList = ["apple", "banana", "cherry"]
+# thisList = ["apple", "banana", "cherry"]
 # tropical = ["mango", "pineapple", "papaya"]
 # thistuple = ("kiwi", "orange")
 # thisList.extend(thistuple)
@@ -167,7 +167,7 @@ thisList = ["apple", "banana", "cherry"]
 #     print(thisList[i])
 #     i += 1
 
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 # newList = []
 
 # for x in fruits:
@@ -176,6 +176,123 @@ fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 
 # newList = [x for x in fruits if "a" in x]
 # newList = [x for x in fruits if x != "apple"]
-newList = [x for x in fruits]
+# newList = [x for x in fruits]
+# newList = [x for x in range(10)]
+# newList = [x for x in range(10) if x < 5]
+# newList = [x.upper() for x in fruits]
+# newList = [x if x != "banana" else "orange" for x in fruits]
 
-print(newList)
+# def myfunc(n):
+#     return abs(n - 50)
+
+# thisList = ["orange", "mango", "kiwi", "pineapple", "banana"]
+# thisList = [100, 50, 65, 82, 23]
+# thisList.sort(key = myfunc)
+# thisList = ["banana", "Orange", "Kiwi", "cherry"]
+# thisList.sort(key = str.lower)
+# thisList.reverse()
+# myList = list(thisList)
+# list1 = ["a", "b", "c"]
+# list2 = [1, 2, 3]
+# list3 = list1 + list2
+# for x in list2:
+#     list1.append(x)
+# list1.extend(list2)
+
+# print(list1)
+
+# thisTuple = ("apple", "banana", "cherry")
+# if "apple" in thisTuple:
+#     print("Yes, 'apple' is in the fruits tuple")
+
+# x = ("apple", "banana", "cherry")
+# y = list(x)
+# y[1] = "kiwi"
+# x = tuple(y)
+
+# print(x)
+
+# y = list(thisTuple)
+# y.append("orange")
+# thisTuple = tuple(y)
+
+# y = ("orange",)
+# thisTuple += y
+
+# y = list(thisTuple)
+# y.remove("apple")
+# thisTuple = tuple(y)
+
+# del thisTuple
+
+# print(thisTuple)
+# fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+# (green, *yellow, red) = fruits
+
+# print(green)
+# print(yellow)
+# print(red)
+
+# for x in thisTuple:
+#     print(x)
+
+# for i in range(len(thisTuple)):
+#     print(thisTuple[i])
+
+# i = 0
+# while i < len(thisTuple):
+#     print(thisTuple[i])
+#     i += 1
+
+# thisSet = {"apple", "banana", "cherry"}
+# tropical = {"pineapple", "mango", "papaya"}
+# myList = ["kiwi", "orange"]
+# print("banana" in thisSet)
+
+# for x in thisSet:
+#     print(x)
+
+# thisSet.add("orange")
+# thisSet.update(myList)
+# thisSet.discard("banana")
+# x = thisSet.pop()
+# print(x)
+# thisSet.clear()
+# del thisSet
+# print(thisSet)
+
+# set1 = {"a", "b", "c"}
+# set2 = {1, 2, 3}
+
+# set3 = set1.union(set2)
+# set1.update(set2)
+# print(set1)
+
+# x = {"apple", "banana", "cherry"}
+# y = {"google", "microsoft", "apple"}
+
+# x.intersection_update(y)
+# x.symmetric_difference_update(y)
+# print(x)
+
+# z = x.intersection(y)
+# z = x.symmetric_difference(y)
+# print(z)
+
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964,
+}
+
+# car["color"] = "red"
+# car["year"] = 2020
+# x = car.items()
+# print(x)
+
+# if "model" in car:
+#     print("Yes, 'model' is one of the keys in the thisDict dictionary")
+
+# car["year"] = 2018
+car.update({"year": 2020})
+print(car)
