@@ -294,5 +294,48 @@ car = {
 #     print("Yes, 'model' is one of the keys in the thisDict dictionary")
 
 # car["year"] = 2018
-car.update({"year": 2020})
-print(car)
+# car.update({"year": 2020})
+# car.popitem()
+# del car["model"]
+# car.clear()
+# print(car)
+
+# for x, y in car.items():
+#     print(x, y)
+
+# myCar = dict(car)
+# print(myCar)
+
+# myFamily = {
+#     "child1": {
+#         "name": "Emil",
+#         "year": 2004
+#     },
+#     "child2": {
+#         "name": "Tobias",
+#         "year": 2007
+#     },
+#     "child3": {
+#         "name": "Linus",
+#         "year": 2011
+#     }
+# }
+child1 = {
+    "name": "Emil",
+    "year": 2004
+}
+child2 = {
+    "name": "Tobias",
+    "year": 2007
+}
+child3 = {
+    "name": "Linus",
+    "year": 2011
+}
+myFamily = {
+    "child1": child1,
+    "child2": child2,
+    "child3": child3
+}
+
+print(myFamily)
