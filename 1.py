@@ -356,15 +356,38 @@
 
 # print("A") if a > b else print("B")
 
-if a > b or a > c:
-    print("At least one of the conditions is True")
+# if a > b or a > c:
+#     print("At least one of the conditions is True")
 
-if x > 10:
-    print("Above ten,")
-    if x > 20:
-        print("and also above 20!")
-    else:
-        print("but not above 20.")
+# if x > 10:
+#     print("Above ten,")
+#     if x > 20:
+#         print("and also above 20!")
+#     else:
+#         print("but not above 20.")
 
-if b > a:
-    pass
+# if b > a:
+#     pass
+
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i += 1
+
+while i < 6:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
+
+while i < 6:
+    print(i)
+    i += 1
+else:
+    print("i is no longer less than 6")
