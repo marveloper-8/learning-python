@@ -279,11 +279,11 @@
 # z = x.symmetric_difference(y)
 # print(z)
 
-car = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 1964,
-}
+# car = {
+#     "brand": "Ford",
+#     "model": "Mustang",
+#     "year": 1964,
+# }
 
 # car["color"] = "red"
 # car["year"] = 2020
@@ -320,22 +320,51 @@ car = {
 #         "year": 2011
 #     }
 # }
-child1 = {
-    "name": "Emil",
-    "year": 2004
-}
-child2 = {
-    "name": "Tobias",
-    "year": 2007
-}
-child3 = {
-    "name": "Linus",
-    "year": 2011
-}
-myFamily = {
-    "child1": child1,
-    "child2": child2,
-    "child3": child3
-}
+# child1 = {
+#     "name": "Emil",
+#     "year": 2004
+# }
+# child2 = {
+#     "name": "Tobias",
+#     "year": 2007
+# }
+# child3 = {
+#     "name": "Linus",
+#     "year": 2011
+# }
+# myFamily = {
+#     "child1": child1,
+#     "child2": child2,
+#     "child3": child3
+# }
 
-print(myFamily)
+# print(myFamily)
+
+# a = 33
+# b = 200
+# c = 500
+# x = 41
+
+# if b > a:
+#     print("b is greater than a")
+# elif a == b:
+#     print("a and b are equal")
+# else:
+#     print("a is greater than b")
+
+# if a > b: print("a is greater than b")
+
+# print("A") if a > b else print("B")
+
+if a > b or a > c:
+    print("At least one of the conditions is True")
+
+if x > 10:
+    print("Above ten,")
+    if x > 20:
+        print("and also above 20!")
+    else:
+        print("but not above 20.")
+
+if b > a:
+    pass
