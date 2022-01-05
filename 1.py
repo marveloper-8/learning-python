@@ -518,20 +518,40 @@
 # print("\n\nRecursion Example Results")
 # tri_recursion(6)
 
-x = lambda a : a + 10
-print(x(5))
+# x = lambda a : a + 10
+# print(x(5))
 
-x1 = lambda a, b: a * b
-print(x1(5, 6))
+# x1 = lambda a, b: a * b
+# print(x1(5, 6))
 
-x2 = lambda a, b, c: a + b + c
-print(x2(5, 6, 2))
+# x2 = lambda a, b, c: a + b + c
+# print(x2(5, 6, 2))
 
-def func1(n):
-    return lambda a: a * n
+# def func1(n):
+#     return lambda a: a * n
 
-mydoubler = func1(2)
-print(mydoubler(11))
+# mydoubler = func1(2)
+# print(mydoubler(11))
 
-mytripler = func1(3)
-print(mytripler(11))
+# mytripler = func1(3)
+# print(mytripler(11))
+
+cars = ["Ford", "Volvo", "BMW"]
+x = cars[0]
+print(x)
+
+cars[0] = "Toyota"
+print(cars)
+
+x1 = len(cars)
+print(x1)
+
+for x in cars:
+    print(x)
+
+cars.append("Honda")
+print(cars)
+
+# cars.pop(1)
+cars.remove("Volvo")
+print(cars)
