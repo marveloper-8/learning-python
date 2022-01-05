@@ -392,53 +392,128 @@
 # else:
 #     print("i is no longer less than 6")
 
-fruits = ["apple", "banana", "cherry"]
-for x in fruits:
-    print(x)
+# fruits = ["apple", "banana", "cherry"]
+# for x in fruits:
+#     print(x)
 
-for x in "banana":
-    print(x)
+# for x in "banana":
+#     print(x)
 
-for x in fruits:
-    print(x)
-    if x == "banana":
-        break
+# for x in fruits:
+#     print(x)
+#     if x == "banana":
+#         break
 
-for x in fruits:
-    if x == "banana":
-        break
-    print(x)
+# for x in fruits:
+#     if x == "banana":
+#         break
+#     print(x)
 
-for x in fruits:
-    if x == "banana":
-        continue
-    print(x)
+# for x in fruits:
+#     if x == "banana":
+#         continue
+#     print(x)
 
-for x in range(6):
-    print(x)
+# for x in range(6):
+#     print(x)
 
-for x in range(2, 6):
-    print(x)
+# for x in range(2, 6):
+#     print(x)
 
-for x in range(2, 30, 3):
-    print(x)
+# for x in range(2, 30, 3):
+#     print(x)
 
-for x in range(6):
-    print(x)
-else:
-    print("Finally finished!")
+# for x in range(6):
+#     print(x)
+# else:
+#     print("Finally finished!")
 
-for x in range(6):
-    if x == 3: break
-    print(x)
-else:
-    print("Finally finished!")
+# for x in range(6):
+#     if x == 3: break
+#     print(x)
+# else:
+#     print("Finally finished!")
 
-adj = ["red", "big", "tasty"]
+# adj = ["red", "big", "tasty"]
 
-for x in adj:
-    for y in fruits:
-        print(x, y)
+# for x in adj:
+#     for y in fruits:
+#         print(x, y)
 
-for x in [0, 1, 2]:
-    pass
+# for x in [0, 1, 2]:
+#     pass
+
+# def my_function():
+#     print("Hello from a function")
+
+# my_function()
+
+# def func1(fname):
+#     print(fname + " Refsnes")
+
+# func1("Emil")
+# func1("Tobias")
+# func1("Linus")
+
+# def func2(fname, lname):
+#     print(fname + ' ' + lname)
+
+# func2("Emil", "Refsnes")
+
+# def func3(*kids):
+#     print("The youngest child is " + kids[2])
+
+# func3("Emil", "Tobias", "Linus")
+
+# def func4(child3, child2, child1):
+#     print("The youngest child is " + child3)
+
+# func4(
+#     child1 = "Emil",
+#     child2 = "Tobias",
+#     child3 = "Linus"
+# )
+
+# def func5(**kid):
+#     print("His last name is " + kid["lname"])
+
+# func5(
+#     fname = "Tobias",
+#     lname = "Refsnes"
+# )
+
+# def func6(country = "Norway"):
+#     print("I am from " + country)
+
+# func6("Sweden")
+# func6("India")
+# func6()
+# func6("Brazil")
+
+# def func7(food):
+#     for x in food:
+#         print(x)
+
+# fruits = ["apple", "banana", "cherry"]
+# func7(fruits)
+
+# def func8(x):
+#     return 5 * x
+
+# print(func8(3))
+# print(func8(5))
+# print(func8(9))
+
+# def func9():
+#     pass
+
+def tri_recursion(k):
+    if(k > 0):
+        result = k + tri_recursion(k - 1)
+        print(result)
+    else:
+        result = 0
+    return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
