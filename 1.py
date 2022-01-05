@@ -536,22 +536,47 @@
 # mytripler = func1(3)
 # print(mytripler(11))
 
-cars = ["Ford", "Volvo", "BMW"]
-x = cars[0]
-print(x)
+# cars = ["Ford", "Volvo", "BMW"]
+# x = cars[0]
+# print(x)
 
-cars[0] = "Toyota"
-print(cars)
+# cars[0] = "Toyota"
+# print(cars)
 
-x1 = len(cars)
-print(x1)
+# x1 = len(cars)
+# print(x1)
 
-for x in cars:
-    print(x)
+# for x in cars:
+#     print(x)
 
-cars.append("Honda")
-print(cars)
+# cars.append("Honda")
+# print(cars)
 
 # cars.pop(1)
-cars.remove("Volvo")
-print(cars)
+# cars.remove("Volvo")
+# print(cars)
+
+# class MyClass:
+#     x = 5
+
+# p1 = MyClass()
+# print(p1.x)
+
+class Person:
+    def __init__(mysillyobject, name, age):
+        mysillyobject.name = name
+        mysillyobject.age = age
+    
+    def myfunc(abc):
+        print("Hello my name is " + abc.name)
+
+p1 = Person("John", 36)
+
+print(p1.name)
+print(p1.age)
+
+p1.myfunc()
+
+p1.age = 40
+del p1.age
+print(p1.age)
