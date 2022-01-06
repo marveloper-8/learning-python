@@ -614,45 +614,68 @@
 
 # y.welcome()
 
-myTuple = ("apple", "banana", "cherry")
-myIt = iter(myTuple)
+# myTuple = ("apple", "banana", "cherry")
+# myIt = iter(myTuple)
 
-print(next(myIt))
-print(next(myIt))
-print(next(myIt))
+# print(next(myIt))
+# print(next(myIt))
+# print(next(myIt))
 
-myStr = "banana"
-myIt2 = iter(myStr)
+# myStr = "banana"
+# myIt2 = iter(myStr)
 
-print(next(myIt2))
-print(next(myIt2))
-print(next(myIt2))
-print(next(myIt2))
-print(next(myIt2))
-print(next(myIt2))
+# print(next(myIt2))
+# print(next(myIt2))
+# print(next(myIt2))
+# print(next(myIt2))
+# print(next(myIt2))
+# print(next(myIt2))
 
-for x in myTuple:
-    print(x)
+# for x in myTuple:
+#     print(x)
 
-for x in "banana":
-    print(x)
+# for x in "banana":
+#     print(x)
 
-class MyNumbers:
-    def __iter__(self):
-        self.a = 1
-        return self
+# class MyNumbers:
+#     def __iter__(self):
+#         self.a = 1
+#         return self
     
-    def next(self):
-        if self.a <= 20:
-            x = self.a
-            self.a += 1
-            return x
-        else:
-            raise StopIteration
+#     def next(self):
+#         if self.a <= 20:
+#             x = self.a
+#             self.a += 1
+#             return x
+#         else:
+#             raise StopIteration
 
 
-myclass = MyNumbers()
-myIter = iter(myclass)
+# myclass = MyNumbers()
+# myIter = iter(myclass)
 
-for x in myIter:
-    print(x)
+# for x in myIter:
+#     print(x)
+
+# def myfunc():
+#     x = 300
+#     def myinnerfunc():
+#         print(x)
+#     myinnerfunc()
+
+# myfunc()
+
+# x = 300
+# def myfunc():
+#     x = 200
+#     print(x)
+
+x = 300
+
+def myfunc():
+    global x
+    x = 200
+
+myfunc()
+
+print(x)
