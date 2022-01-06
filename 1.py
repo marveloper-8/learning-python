@@ -562,21 +562,71 @@
 # p1 = MyClass()
 # print(p1.x)
 
-class Person:
-    def __init__(mysillyobject, name, age):
-        mysillyobject.name = name
-        mysillyobject.age = age
+# class Person:
+#     def __init__(mysillyobject, name, age):
+#         mysillyobject.name = name
+#         mysillyobject.age = age
     
-    def myfunc(abc):
-        print("Hello my name is " + abc.name)
+#     def myfunc(abc):
+#         print("Hello my name is " + abc.name)
 
-p1 = Person("John", 36)
+# p1 = Person("John", 36)
 
-print(p1.name)
-print(p1.age)
+# print(p1.name)
+# print(p1.age)
 
-p1.myfunc()
+# p1.myfunc()
 
-p1.age = 40
-del p1.age
-print(p1.age)
+# p1.age = 40
+# del p1.age
+# print(p1.age)
+
+# class Person:
+#     def __init__(self, fname, lname):
+#         self.firstname = fname
+#         self.lastname = lname
+    
+#     def printname(self):
+#         print(self.firstname, self.lastname)
+
+# x = Person("John", "Doe")
+# x.printname()
+
+# class Student(Person):
+    # pass
+    # def __init__(self, fname, lname, year):
+        # Person.__init__(self, fname, lname)
+#         super().__init__(fname, lname)
+#         self.graduationyear = year
+    
+#     def welcome(self):
+#         print(
+#             "Welcome",
+#             self.firstname,
+#             self.lastname,
+#             "to the class of",
+#             self.graduationyear
+#         )
+
+# y = Student("Mike", "Olsen", 2019)
+# y.printname()
+# print(y.graduationyear)
+
+# y.welcome()
+
+myTuple = ("apple", "banana", "cherry")
+myIt = iter(myTuple)
+
+print(next(myIt))
+print(next(myIt))
+print(next(myIt))
+
+myStr = "banana"
+myIt2 = iter(myStr)
+
+print(next(myIt2))
+print(next(myIt2))
+print(next(myIt2))
+print(next(myIt2))
+print(next(myIt2))
+print(next(myIt2))
