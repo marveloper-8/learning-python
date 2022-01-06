@@ -670,12 +670,18 @@
 #     x = 200
 #     print(x)
 
-x = 300
+# x = 300
 
-def myfunc():
-    global x
-    x = 200
+# def myfunc():
+#     global x
+#     x = 200
 
-myfunc()
+# myfunc()
 
-print(x)
+# print(x)
+
+import mymodule
+
+mymodule.greeting("Jonathan")
+a = mymodule.person1["age"]
+print(a)
