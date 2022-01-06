@@ -53,26 +53,68 @@
 # print(a.strftime("%u"))
 # print(a.strftime("%V"))
 
-a = min(5, 10, 25)
-b = max(5, 10, 25)
-print(a)
-print(b)
+# a = min(5, 10, 25)
+# b = max(5, 10, 25)
+# print(a)
+# print(b)
 
-c = abs(-7.25)
-print(c)
+# c = abs(-7.25)
+# print(c)
 
-d = pow(4, 3)
+# d = pow(4, 3)
+# print(d)
+
+# import math
+
+# e = math.sqrt(64)
+# print(e)
+
+# f = math.ceil(1.4)
+# g = math.floor(1.4)
+# print(f)
+# print(g)
+
+# h = math.pi
+# print(h)
+
+import json
+
+a = '{"name": "John", "age": 30, "city": "New York"}'
+b = json.loads(a)
+print(b["age"])
+
+c = {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+}
+d = json.dumps(c)
 print(d)
 
-import math
+print(json.dumps({"name": "John", "age": 30}))
+print(json.dumps(["apple", "bananas"]))
+print(json.dumps(("apple", "bananas")))
+print(json.dumps("hello"))
+print(json.dumps(42))
+print(json.dumps(31.76))
+print(json.dumps(True))
+print(json.dumps(False))
+print(json.dumps(None))
 
-e = math.sqrt(64)
-print(e)
+e = {
+    "name": "John",
+    "age": 30,
+    "married": True,
+    "divorced": False,
+    "children": ("Ann","Billy"),
+    "pets": None,
+    "cars": [
+        {"model": "BMW 230", "mpg": 27.5},
+        {"model": "Ford Edge", "mpg": 24.1}
+    ]
+}
 
-f = math.ceil(1.4)
-g = math.floor(1.4)
-print(f)
-print(g)
-
-h = math.pi
-print(h)
+print(json.dumps(e))
+print(json.dumps(e, indent=4))
+print(json.dumps(e, indent=4, separators=(". ", " = ")))
+print(json.dumps(e, indent=4, sort_keys=True))
