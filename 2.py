@@ -345,9 +345,48 @@
 # print(ao.string)
 # print(ao.group())
 
-import camelcase
+# import camelcase
 
-c = camelcase.CamelCase()
+# c = camelcase.CamelCase()
 
-txt = "hello world"
-print(c.hump(txt))
+# txt = "hello world"
+# print(c.hump(txt))
+
+try:
+    print(x)
+except:
+    print("An exception occured")
+
+try:
+    print(x)
+except NameError:
+    print("Variable x is not defined")
+except:
+    print("Something else went wrong")
+
+try:
+    print(x)
+except:
+    print("Something went wrong")
+finally:
+    print("The 'try except' is finished")
+
+try:
+    f = open("demofile.txt")
+    try:
+        f.write("Lorum Ipsum")
+    except:
+        print("something went wrong when writing to the file")
+    finally:
+        f.close()
+except:
+    print("Something went wrong when opening the file")
+
+# a = -1
+
+# if a < 0:
+#     raise Exception("Sorry, no numbers below the zero")
+
+b = "hello"
+if not type(b) is int:
+    raise TypeError("Only integers are allowed")
