@@ -23,4 +23,12 @@
 # f = open("demofile3.txt", "r")
 # print(f.read())
 
-f = open("myfile.txt", "x")
+# f = open("myfile.txt", "x")
+
+import os
+# os.remove("demofile.txt")
+# if os.path.exists("demofile2.txt"):
+#     os.remove("demofile2.txt")
+# else:
+#     print("The file does not exist")
+os.rmdir("myfolder")
