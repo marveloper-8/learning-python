@@ -394,26 +394,84 @@
 # username = input("Enter username:")
 # print("Username is: " + username)
 
-price = 49
-a = "The price is {} dollars"
-print(a.format(price))
+# price = 49
+# a = "The price is {} dollars"
+# print(a.format(price))
 
-b = "The price is {:.2f} dollars"
-print(b.format(price))
+# b = "The price is {:.2f} dollars"
+# print(b.format(price))
 
-quantity = 3
-itemno = 567
-price = 49
-myorder = "I want {} pieces of item number {} for {:.2f} dollars."
-print(myorder.format(quantity, itemno, price))
+# quantity = 3
+# itemno = 567
+# price = 49
+# myorder = "I want {} pieces of item number {} for {:.2f} dollars."
+# print(myorder.format(quantity, itemno, price))
 
-myorder2 = "I want {0} pieces of item number {1} for {2:.2f} dollars."
-print(myorder2.format(quantity, itemno, price))
+# myorder2 = "I want {0} pieces of item number {1} for {2:.2f} dollars."
+# print(myorder2.format(quantity, itemno, price))
 
-age = 36
-name = "John"
-c = "His name is {1}. {1} is {0} years old."
-print(c.format(age, name))
+# age = 36
+# name = "John"
+# c = "His name is {1}. {1} is {0} years old."
+# print(c.format(age, name))
 
-d = "I have a {carname}, it is a {model}."
-print(d.format(carname = "Ford", model = "Mustang"))
+# d = "I have a {carname}, it is a {model}."
+# print(d.format(carname = "Ford", model = "Mustang"))
+
+# a = "hello world"
+# b = "I love apples, apple are my favorite fruit"
+# c = "H\te\tl\tl\to"
+# d = "For only {price:.2f} dollars!"
+# e = ("John", "Peter", "Vicky")
+# f = "Hello Sam!"
+# g = "I could eat bananas all day"
+# h = "I like bananas"
+# i = "I could eat bananas all day, bananas are my favourite fruits"
+# j = "apple, banana, cherry"
+# k = "Thank you for the music\nWelcome to the jungle"
+# l = {83: 80}
+# m = "Hello Sam!"
+# n = "50"
+
+# print(a.capitalize())
+# print(a.casefold())
+# print(a.center(20))
+# print(b.count("apple"))
+# print(a.encode())
+# print(a.endswith("d"))
+# print(c.expandtabs(5))
+# print(b.find("app"))
+# print(d.format(price = 49))
+# print(b.index("app"))
+# print(a.isalnum())
+# print(a.isalpha())
+# print(a.isdecimal())
+# print(a.isdigit())
+# print(a.isidentifier())
+# print(a.islower())
+# print(a.isnumeric())
+# print(a.isprintable())
+# print(a.isspace())
+# print(a.istitle())
+# print(a.isupper())
+# print("#".join(e))
+# print(a.ljust(20))
+# print(a.lower())
+# print(a.lstrip())
+# print(f.translate(f.maketrans("S", "P")))
+# print(g.partition("bananas"))
+# print(h.replace("bananas", "apples"))
+# print(a.rfind("hello"))
+# print(a.rindex("he"))
+# print(a.rjust(20))
+# print(h.rpartition("bananas"))
+# print(j.rsplit(", "))
+# print(j.split(","))
+# print(k.splitlines())
+# print(a.startswith("he"))
+# print(a.strip())
+# print(k.swapcase())
+# print(k.title())
+# print(m.translate(l))
+# print(m.upper())
+# print(n.zfill(10))
